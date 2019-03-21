@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             xmlns:local="clr-namespace:Xamarin.PinningAppDemo" 
+             x:Class="Xamarin.PinningAppDemo.Core.Pages.MainPage"
+             Title="Pinning Demo">
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Name="Refresh"
+                     Command="{Binding RefreshData}" />
+    </ContentPage.ToolbarItems>
+    <StackLayout>
+        <ListView x:Name="UserList"
+                  ItemsSource="{Binding Users}"
+                  HasUnevenRows="false"
+                  Margin="0">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <TextCell Text="{Binding Name}" Detail="{Binding Email}" />
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </StackLayout>
+</ContentPage>
