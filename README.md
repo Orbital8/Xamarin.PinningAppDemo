@@ -1,1 +1,1 @@
-# PinningAppDemo
+# Xamarin Certificate Pinning Sample
