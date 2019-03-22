@@ -121,9 +121,9 @@ namespace Xamarin.PinningAppDemo.Droid.Services
 
         private void TamperChecks()
         {
-            CheckNotDebuggable();
-            VerifyInstaller();
-            ValidateSignature();
+            //CheckNotDebuggable();
+            //VerifyInstaller();
+            //ValidateSignature();
         }
 
         private void CheckNotDebuggable()
