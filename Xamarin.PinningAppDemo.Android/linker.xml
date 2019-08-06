@@ -1,0 +1,8 @@
+﻿<linker>
+
+  <assembly fullname="Mono.Android">
+    <namespace fullname="Xamarin.Android.Net" />
+    <namespace fullname="Javax.Net.Ssl" />
+  </assembly>
+
+</linker>

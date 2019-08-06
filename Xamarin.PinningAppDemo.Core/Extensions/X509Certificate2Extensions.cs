@@ -17,5 +17,13 @@ namespace Xamarin.PinningAppDemo.Core.Extensions
 
             return hashBytes.Aggregate(String.Empty, (str, hashByte) => str + hashByte.ToString("x2"));
         }
+
+        public static string PublicKeySha256(this X509Certificate2 cert)
+        {
+            using (HashAlgorithm alg = SHA256.Create("SHA-256"))
+            {
+                return string.Concat(Array.ConvertAll(alg.ComputeHash(cert.GetPublicKey()), x => x.ToString("x2")));
+            }
+        }
     }
 }

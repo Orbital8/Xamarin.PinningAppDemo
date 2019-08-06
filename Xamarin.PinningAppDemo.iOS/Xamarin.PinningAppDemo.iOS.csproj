@@ -93,15 +93,8 @@
     <Compile Include="Main.cs" />
     <Compile Include="AppDelegate.cs" />
     <Compile Include="Services\HttpClientFactoryIos.cs" />
-    <Compile Include="Services\ModernHttpClient\AsyncLock.cs" />
-    <Compile Include="Services\ModernHttpClient\CaptiveNetworkException.cs" />
-    <Compile Include="Services\ModernHttpClient\CFNetworkError.cs" />
-    <Compile Include="Services\ModernHttpClient\NativeCookieHandler.cs" />
-    <Compile Include="Services\ModernHttpClient\NativeMessageHandler.cs" />
-    <Compile Include="Services\ModernHttpClient\NSUrlErrorExtended.cs" />
-    <Compile Include="Services\ModernHttpClient\ProgressStreamContent.cs" />
-    <Compile Include="Services\ModernHttpClient\Utility.cs" />
-    <Compile Include="Services\PinningSessionHandler.cs" />
+    <Compile Include="Services\PinningNSUrlSessionHandler.cs" />
+    <Compile Include="Services\TrustOverrideDelegate.cs" />
     <None Include="Entitlements.plist" />
     <None Include="Info.plist" />
     <Compile Include="PlatformInitialiserIos.cs" />
@@ -165,9 +158,9 @@
     <Reference Include="Xamarin.iOS" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="Newtonsoft.Json" Version="12.0.1" />
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.2" />
     <PackageReference Include="System.Net.Http" Version="4.3.4" />
-    <PackageReference Include="Xamarin.Forms" Version="3.6.0.264807" />
+    <PackageReference Include="Xamarin.Forms" Version="4.0.0.540366" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Xamarin.PinningAppDemo.Core\Xamarin.PinningAppDemo.Core.csproj">
