@@ -165,7 +165,7 @@
     <Reference Include="Xamarin.iOS" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="Newtonsoft.Json" Version="12.0.1" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.2" />
     <PackageReference Include="System.Net.Http" Version="4.3.4" />
     <PackageReference Include="Xamarin.Forms" Version="3.6.0.264807" />
   </ItemGroup>
